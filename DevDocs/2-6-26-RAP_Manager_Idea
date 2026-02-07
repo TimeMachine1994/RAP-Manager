@@ -1,0 +1,7 @@
+I want to create a UI for a DevDocs Folder. I want there to be a nav bar at the top and a side bar on the left.
+
+Three tabs for the main area: Project Scope, User Journies, and Mental Snapshots
+
+Just make them empty pages with the left nav column as well. 
+
+Before we go to the nav bar and side bar, we should have a project list and the option to create a new project, or delete a proejct. 
