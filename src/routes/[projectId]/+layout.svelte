@@ -11,6 +11,8 @@
 		{ label: 'Mental Snapshots', href: `/${projectId}/mental-snapshots` }
 	]);
 
+	const importHref = $derived(`/${projectId}/import`);
+
 	const currentPath = $derived(page.url.pathname);
 </script>
 
@@ -40,6 +42,17 @@
 						{tab.label}
 					</a>
 				{/each}
+
+				<hr class="my-2 border-gray-200" />
+
+				<a
+					href={importHref}
+					class="rounded-md px-3 py-2 text-sm font-medium transition {currentPath === importHref
+						? 'bg-emerald-50 text-emerald-700'
+						: 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'}"
+				>
+					⚡ Smart Import
+				</a>
 			</nav>
 		</aside>
 
